@@ -16,10 +16,9 @@ def args_fn():
 def labeling(texts, openai_key):
     pickdeal_promp = PickDealPromptify(
         openai_key=openai_key,
-        path_file_jinja=f"pickdeal.jinja"
     )
     for text in texts:
-        result = pickdeal_promp(sentence=text)
+        result = pickdeal_promp(sentence=text, path_file_jinja=f"pickdeal.jinja")
         print(result)
 
 
