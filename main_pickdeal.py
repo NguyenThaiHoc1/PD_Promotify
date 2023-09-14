@@ -33,3 +33,4 @@ def run(args):
 
 if __name__ == '__main__':
     args = args_fn()
+    run(args)

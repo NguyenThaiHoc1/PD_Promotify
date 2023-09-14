@@ -2,7 +2,7 @@ import unicodedata
 import regex as re
 from pyvi import ViTokenizer, ViPosTagger
 import pandas as pd
-from FPromptify.promptify import Prompter, OpenAI
+from promptify import Prompter, OpenAI
 
 bang_nguyen_am = [['a', 'à', 'á', 'ả', 'ã', 'ạ', 'a'],
                   ['ă', 'ằ', 'ắ', 'ẳ', 'ẵ', 'ặ', 'aw'],
